@@ -3,7 +3,7 @@ session_start();
 
 //check if the user is logged in
 if (isset($_SESSION["username"])){
-	$pdo = new PDO('mysql:host=localhost;dbname=localdb', 'azure', '6#vWHD_$');
+	$pdo = new PDO('mysql:host=127.0.0.1:57342;dbname=localdb', 'azure', '6#vWHD_$');
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	try {
 			$entry = $pdo->prepare('INSERT INTO reviews VALUES(:username, :review, :itemid, :rating)');

@@ -1,6 +1,6 @@
 <?php
 	
-	$pdo = new PDO('mysql:host=localhost;dbname=localdb', 'azure', '6#vWHD_$');
+	$pdo = new PDO('mysql:host=127.0.0.1:57342;dbname=localdb', 'azure', '6#vWHD_$');
 	
 	
 	// Create datalist options for suburb input field from park database

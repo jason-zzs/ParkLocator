@@ -26,7 +26,7 @@ if ($a==1){
 		include 'Registration.php';
 	} else {
 		//connecting to the database
-		$pdo = new PDO('mysql:host=localhost;dbname=localdb', 'azure', '6#vWHD_$');
+		$pdo = new PDO('mysql:host=127.0.0.1:57342;dbname=localdb', 'azure', '6#vWHD_$');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		try {
 			//checks if the given username is already in use
