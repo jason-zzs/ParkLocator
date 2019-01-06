@@ -1,6 +1,6 @@
 <?php
 	
-	$pdo = new PDO('mysql:host=127.0.0.1:57342;dbname=localdb', 'azure', '6#vWHD_$');
+	$pdo = new PDO('mysql:host=127.0.0.1:8080;dbname=localdb', 'azure', '6#vWHD_$');
 	
 	// The algorithm to calculate the distance between two locations in kilometres
 	function getDistance($lat1, $lon1, $lat2, $lon2) {
